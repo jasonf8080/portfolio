@@ -85,14 +85,18 @@ a{
 
 .header{
     width: 100%;
-    height: 80vh;
-    display: grid;
+    height: 90vh;
+    display: none;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
     padding: 70px 0;
-    background: linear-gradient(to bottom, #000000 31%, #ff9966 100%);
+    background: url("IMG_5186.jpg") no-repeat center/cover;
 }
 
+.the-header-img{
+    max-width: 100%;
+    height: auto;
+}
 
 .header::after{
     content: '';
@@ -101,7 +105,7 @@ a{
     width: 100%;
     top: 0;
     left: 0;
-    
+    background: rgba(0, 0, 0, 0.295);
     opacity: 0.8;
 }
 
