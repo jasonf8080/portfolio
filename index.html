@@ -10,23 +10,24 @@
 </head>
 <body>
     <nav class="nav">
-       <img src="Group 108.png" alt="" class="logo">
+        <div class="container">
+            <img src="Group 108.png" alt="" class="logo">
 
-        <ul class="links">
-            <li><a href="index.html">PROJECTS</a></li>
-            <li><a href="aboutme.html">About</a></li>
-            <li><a href="#">Resume</a></li>
-        </ul>
+                <ul class="links">
+                    <li><a href="#" data-id="about">About</a></li>
+                    <li><a href="#" data-id="projects">Projects</a></li>
+                    <li><a href="#" data-id="skills">Skills</a></li>
+                    <li><a href="#" data-id="contact">Contact</a></li>
+                </ul>
 
-        <div class="menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+                <div class="menu">
+                    <i class="fas fa-bars"></i>
+                </div>
         </div>
     </nav>
 
    
-        <header class="header">
+        <section class="header" data-id="header">
             <div class="header-content">
                 <h1 class="main-heading">Hey I'm Jason</h1>
                 <p class="sub-heading">Front End Developer From NY</p>
@@ -43,19 +44,26 @@
                 <a class="btn" href="#">Contact Me</a>
                 <a class="btn resume-btn" href="#">Resume</a>
             </div>
-        </header>
+        </section>
 
-        <img class="the-header-img"src="IMG_5186.jpg" alt="">
+        <!--<img class="the-header-img"src="IMG_5186.jpg" alt="">-->
 
-        <div class="about-me">
-            <p class="about-me-desc">I have an Associates Degree from Dutchess Community College (Poughkeepsie, NY) in Business. Currently I am on track to earn my Bachelor’s Degree in Marketing from Western Connecticut State University (Danbury, CT).</p>
-            <p class="about-me-desc">Over the years I’ve grown a passion for web development and improving businesses’ online presence.</p>
+    <section class="about-me-section" data-id="about">
+        <div class="skewed"></div>
+        <img src="about-me-img.png" alt="" class="about-img"><!--positon absolute-->
+        <div class="about-me-container">
+            <h1 class="about-heading">About Me</h1>
+            <h3 class="about-job">JASON FLEMING <span></span> FRONT END DEVELOPER</h3>
+
+            <p class="about-content">I have an Associates Degree from Dutchess Community College (Poughkeepsie, NY) in Business. Currently I am on track to earn my Bachelor’s Degree in Marketing from Western Connecticut State University (Danbury, CT). Over the years I’ve grown a passion for web development and improving businesses’ online presence. </p>
         </div>
+    </section>
 
 
     
 
-    <section class="projects-section">
+    <section class="projects-section" data-id="projects">
+        <div class="skewed"></div>
         <div class="project-item">
             <img src="Jason-proj-mockup.png" alt="" class="project-img">
             <div class="project-item-content">
@@ -87,8 +95,22 @@
         </div>
     </section>
 
+    <section class="skills-section" data-id="skills">
+        <div class="skewed"></div>
+        <ul class="my-skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>APIs</li>
+            <li>JSON</li>
+            <li>React</li>
+            <li>Responsive Design</li>
+        </ul>
+    </section>
+
     
-    <footer class="footer">
+    <section class="footer" data-id="contact">
+        <div class="skewed"></div>
         <h3 class="title">Connect With Me!</h3>
 
         <div class="connect-grid">
@@ -117,7 +139,7 @@
                 <p class="connect-info">845-204-4236</p>
             </div>
         </div>
-    </footer>
+    </section>
     <script src="app.js"></script>
 </body>
 </html>
