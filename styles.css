@@ -124,7 +124,7 @@ a{
     grid-template-columns: repeat(2, 1fr);
     position: relative;
     padding: 70px 0;
-    background: url("IMG_5186.jpg") no-repeat center/cover;
+    background: linear-gradient(to right, #ff7c01, #ff016b);
 }
 
 .the-header-img{
@@ -132,29 +132,20 @@ a{
     height: auto;
 }
 
-.header::after{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to right, #ff7c01, #ff016b);
-  
-}
+
 
 .header > *{
     z-index: 99;
 }
 
 .header-content{
-    padding-left: 15%;
+    padding-left: 10%;
     z-index: 999;
 }
 
 .main-heading{
     color: var(--primary-color);
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bolder;
     font-size: 90px;
     z-index: 999;
@@ -163,7 +154,7 @@ a{
 .sub-heading{
     font-size: 28px;
     margin-bottom: 30px;
-    color: rgba(255,255,255, 0.7);
+    color: rgba(0, 0, 0, 0.7);
     font-style: italic;
 }
 
@@ -180,14 +171,7 @@ a{
     font-weight: bolder;
 }
 
-.header-btns a:nth-child(2){
-    background: transparent;
-    border: 3px solid var(--primary-color);
-    color: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 12px;
-    margin-left: 8px;
-}
+
 
 .header-img img{
     max-width: 70%;
@@ -225,6 +209,7 @@ a{
 }
 
 
+
 .about-me-container{
     max-width: 85%;
     margin: 0 auto;
@@ -258,7 +243,15 @@ a{
 }
 
 .projects-section .skewed{
-    background: rgb(236, 236, 236);
+    background: linear-gradient(to right, #ff7c01, #ff016b) !important;
+}
+
+.skills-memoji{
+    position: absolute;
+    top: -20px;
+    right: 8%;
+    width: 160px;
+    height: auto;
 }
 
 .project-item{
@@ -270,14 +263,28 @@ a{
     margin-bottom: 50px;
     background-color: rgb(26, 25, 25);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-100%);
 }
 
 .project-item > *{
     max-width: 100%;
 }
 
+.project-item-1{
+    position: relative;
+}
+
+.memoji-1{
+    position: absolute;
+    width: 275px;
+    height: auto;
+    right: 90px;
+    top: -270px;
+}
+
 .project-img{
     border-radius: 4px 0px 0px 4px;
+    min-width: 100%;
 }
 
 .project-item-content{
@@ -329,22 +336,44 @@ a{
 
 /*skills*/
 .skills-section{
-    padding: 400px 0;
     position: relative;
+    background-color: rgb(247, 75, 33);
+    padding: 100px 0 170px;
 }
 
 .skills-section .skewed{
-    background: white;
-    z-index: 99;
-    top: -50px;
-    right: 0;
-    width: 100%;
-    height: 100px;
-    transform: skewY(2deg);
+    background-color: rgb(247, 75, 33);
 }
 
+.languages-grid{
+    max-width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
 
+.language-element{
+    max-width: 100%;
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
 
+.language-element img{
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.language-name{
+    font-size: 22px;
+}
 
 /*footer*/
 .footer{
@@ -356,11 +385,21 @@ a{
 .skewed{
     position: absolute;
     top: -50px;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 100px;
     background: black;
     transform: skewY(-2deg);
+}
+
+.skewed.reverse{
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background: black;
+    transform: skewY(2deg);
 }
 
 .connect-grid{
@@ -373,8 +412,8 @@ a{
 }
 
 .connect-item{
-    background-color: rgb(26, 25, 25);
-    color: white;
+    color: rgb(26, 25, 25);
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -396,7 +435,7 @@ a{
 }
 
 .connect-item i{
-    color: #868585;
+    color: #bdbdbd;
     font-size: 30px;
 }
 
@@ -420,12 +459,58 @@ a{
 
 .socials i{
     padding: 0 10px;
-    color: #ffffff;
+    color: #181818;
 }
 
+@media(max-width: 1200px){
+    body{
+        border: 3px solid purple;
+    }
 
+    .main-heading{
+        font-size: 70px;
+    }
+    
+    .sub-heading{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 992px){
+    body{
+        border: 3px solid greenyellow;
+    }
+
+    .project-item{
+        display: grid;
+        grid-template-columns: 1fr;
+        transform: translateY(-40%);
+    }
+
+    .memoji-1{
+        position: absolute;
+        width: 200px;
+        height: auto;
+        right: 50%;
+        transform: translateX(50%);
+        top: -195px;
+    }
+
+    .skills-memoji{
+        width: 100px;
+        height: auto;
+    }
+
+    .languages-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media(max-width: 768px) {
+
+    body{
+        border: 3px solid red;
+    }
 
     .links{
         position: absolute;
@@ -448,16 +533,29 @@ a{
       
     }
 
+
     .menu{
         display: block;
         color: #888;
     }
     
    .project-item{
-      
         display: grid;
         grid-template-columns: 1fr;
+        transform: translateY(-60%);
     }
+
+    .memoji-1{
+        position: absolute;
+        width: 160px;
+        height: auto;
+        right: 50%;
+        transform: translateX(50%);
+        top: -157px;
+    }
+    
+
+   
 
     .project-item-content{
         padding: 40px;
@@ -487,6 +585,33 @@ a{
 }
 
 @media(max-width: 600px){
+
+    body{
+        border: 3px solid orange;
+    }
+
+
+    .main-heading{
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .sub-heading{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .header-btns{
+        margin-top: 20px;
+    }
+
+    .btn{
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .project-item-content a{
         display: block;
         width: 100%;
