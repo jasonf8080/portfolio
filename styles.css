@@ -590,6 +590,10 @@ a{
         border: 3px solid orange;
     }
 
+    .header{
+        height: 75vh;
+    }
+
     .header-content{
         padding-left: 0px;
     }
