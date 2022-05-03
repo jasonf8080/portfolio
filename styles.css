@@ -620,10 +620,7 @@ a{
         text-align: center;
     }
 
-    .project-item{
-        transform: translateY(-70%);
-    }
-
+   
     .project-item-content{
         padding: 30px;
     }
