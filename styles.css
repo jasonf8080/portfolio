@@ -647,5 +647,13 @@ a{
         width: 100%;
         text-align: center;
      }
+
+     .language-element{
+        padding: 25px 0;
+    }
+
+    .language-element img{
+        margin-bottom: 18px;
+    }
  
 }
