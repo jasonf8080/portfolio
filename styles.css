@@ -620,6 +620,27 @@ a{
         transform: translateY(-70%);
     }
 
+    .project-item-content{
+        padding: 40px;
+    }
+    
+    .project-item-content h1{
+        font-size: 28px;
+        color: white;
+    }
+    
+    .project-item-content span{
+        color: var(--primary-color);
+        font-size: 13px;
+    }
+    
+    .project-item-content h2{
+        color: white;
+        font-weight: lighter;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
 
     .project-item-content a{
         display: block;
