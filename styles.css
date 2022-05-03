@@ -621,24 +621,24 @@ a{
     }
 
     .project-item-content{
-        padding: 40px;
+        padding: 30px;
     }
     
     .project-item-content h1{
-        font-size: 28px;
+        font-size: 26px;
         color: white;
     }
     
     .project-item-content span{
         color: var(--primary-color);
-        font-size: 13px;
+        font-size: 12px;
     }
     
     .project-item-content h2{
         color: white;
         font-weight: lighter;
         margin-bottom: 30px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
 
