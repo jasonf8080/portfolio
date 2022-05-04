@@ -1,16 +1,17 @@
 const nav = document.querySelector('.nav');
 const navHeight = nav.getBoundingClientRect().height;
 const navLinks = [...document.querySelectorAll('.nav a')];
-const active = document.createElement('div');
-active.classList.add('active-section');
-const sections = [...document.querySelectorAll('section')];
+const menuBtn = document.querySelector('.menu i');
+const menu = document.querySelector('.links');
 
 
 
 
 //EVENT LISTENERS
 window.addEventListener('scroll', fixedNav);
-
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+})
 
 
 //FUNCTIONS
@@ -23,41 +24,6 @@ function fixedNav(){
 }
 
 
-
-let options = {
-    threshold: 0.5
-}
-
-console.log(options)
-const intersectionObserver = new IntersectionObserver(function(entries, _options) {
-
-  entries.forEach((entry) =>{
-     
-      if(entry.isIntersecting){
-        const sectionID = entry.target.getAttribute('data-id');
-        activeLink(sectionID);
-      }
-  })
-});
-
-
-sections.forEach((section) =>{
-    intersectionObserver.observe(section);
-})
-
-function activeLink(sectionID){
-    navLinks.forEach((link) => {
-         active.style.visibility = 'visible';
-        const linkID = link.getAttribute('data-id');
-        const linkParent = link.parentElement;
-        if(sectionID === linkID){
-            linkParent.appendChild(active);
-        } else if(sectionID === 'header'){
-            active.style.visibility = 'hidden';
-            console.log('as')
-        }
-    })
- }
 
 
 

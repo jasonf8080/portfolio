@@ -15,7 +15,9 @@
 
 
 
-
+body{
+    background: rgb(236, 236, 236);
+}
 
 :root{
     --primary-color: #FBA700;
@@ -23,7 +25,7 @@
 }
 
 img{
-    display: block;
+    display: block !important;
 }
 
 li{
@@ -237,7 +239,7 @@ a{
 .projects-section{
     max-width: 100%;
     margin: 0 auto;
-    padding: 120px 0;
+    padding: 120px 0px 0px;
     background: rgb(236, 236, 236);
     position: relative;
 }
@@ -412,8 +414,8 @@ a{
 }
 
 .connect-item{
-    color: rgb(26, 25, 25);
-    background-color: white;
+    color: rgb(255, 255, 255);
+    background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -435,8 +437,15 @@ a{
 }
 
 .connect-item i{
-    color: #bdbdbd;
+    color: #e9e9e9;
     font-size: 30px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(77, 77, 77);
 }
 
 .color-line{
@@ -457,9 +466,10 @@ a{
     align-items: center;
 }
 
-.socials i{
-    padding: 0 10px;
-    color: #181818;
+.socials img{
+   min-width: 70px;
+   max-width: 70px;
+   height: auto;
 }
 
 @media(max-width: 1200px){
@@ -519,19 +529,22 @@ a{
         background: #222;
         width: 100%;
         left: 0;
+        padding: 0px;
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+
+    .links.active{
+        height: 200px;
         padding: 20px 0;
-        display: none;
     }
 
 
     .links li{
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
-    .links a{
-        border: 1px solid red;
-      
-    }
 
 
     .menu{
