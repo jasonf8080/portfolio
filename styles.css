@@ -473,9 +473,7 @@ a{
 }
 
 @media(max-width: 1200px){
-    body{
-        border: 3px solid purple;
-    }
+  
 
     .main-heading{
         font-size: 70px;
@@ -487,9 +485,7 @@ a{
 }
 
 @media(max-width: 992px){
-    body{
-        border: 3px solid greenyellow;
-    }
+  
 
     .project-item{
         display: grid;
@@ -518,9 +514,7 @@ a{
 
 @media(max-width: 768px) {
 
-    body{
-        border: 3px solid red;
-    }
+  
 
     .links{
         position: absolute;
