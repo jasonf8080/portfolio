@@ -4,143 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="main.css">
-   
-    
+    <title>Jason Fleming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-    <!--Loader-->
-    <div class="loader-container">
-        <div class="loader"></div>
-    </div>
-
-    <!--Search Modal-->
-    <div class="search-modal">
-        <i class="fas fa-times exit-btn"></i>
-        <div class="search-container">
-            <div class="search-bar">
-                <a href="search.html"><i class="fas fa-search search-recipe"></i></a>
-                <input type="text" placeholder="Search for a recipe">
-            </div>
-
-            <p class="alert">Please enter a value</p>
-        </div>
-    </div>
-
-    <!--Side Menu-->
-    <div class="side-menu">
-        <i class="fas fa-times menu-exit"></i>
-        <div class="side-menu-content">
-            <img class="side-logo" src="side-logo.png">
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#categories">Categories</a></li>
-                <li><a href="#trending">Trending</a></li>
-                <li><a href="#all-recipes-section">All Recipes</a></li>
-            </ul>
-
-            <div class="side-menu-follow">
-                    <h4>Follow</h4>
-                    <div class="socials">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-            </div>
-        </div>
-    </div>
-
-
-   
-    <!--HTML Begin-->
     <nav class="nav">
-       <div class="menu">
-            <i class="fa-solid fa-bars"></i>
-       </div>
+        <div class="container">
+            <img src="Group 108.png" alt="" class="logo">
 
+                <ul class="links">
+                    <li><a href="#" data-id="about">About</a></li>
+                    <li><a href="#" data-id="projects">Projects</a></li>
+                    <li><a href="#" data-id="skills">Skills</a></li>
+                    <li><a href="#" data-id="contact">Contact</a></li>
+                </ul>
 
-
-       <div class="nav-right">
-            <div class="socials">
-                <h4>Follow</h4>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-
-            <button class="search-btn">
-                <h4>Search</h4>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+                <div class="menu">
+                    <i class="fas fa-bars"></i>
+                </div>
         </div>
-    </nav> 
+    </nav>
 
    
-        <section class="header" id="home">
-           <div class="header-info">
-              <img src="header-img.png" alt="">
-           </div>
-        </section>
-
-    <main>
-
-        <section class="about-us-section" id="about">
-            <h1 class="title">About Us</h1>
-            <div class="about-grid">
-                <div class="about-img-container">
-                    <img src="about.jpg" alt="">
+        <section class="header" data-id="header">
+            <div class="header-content">
+                <h1 class="main-heading">Hey I'm Jason</h1>
+                <p class="sub-heading">Front End Developer From NY</p>
+                <div class="header-btns">
+                    <a class="btn" href="#">Contact Me</a>
+                   
                 </div>
-                <div class="about-content">
-                    <h3>Our Story</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt adipisci aspernatur illum nostrum minus aperiam error, odit consectetur animi laboriosam quos illo, similique autem sed libero omnis mollitia incidunt voluptates reiciendis distinctio beatae nesciunt alias. Magni officia eius quisquam voluptas?</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt adipisci aspernatur illum nostrum minus aperiam error, odit consectetur animi laboriosam quos illo, similique autem sed libero omnis mollitia incidunt voluptates reiciendis distinctio beatae nesciunt alias. Magni officia eius quisquam voluptas?</p>
-                </div>
+            </div>
+            
+            <!--<div class="header-img"><img src="jasonf.png"></div>-->
+           
+
+            <div class="mobile-btns">
+                <a class="btn" href="#">Contact Me</a>
             </div>
         </section>
 
-        <section class="categories" id="categories">
-            <h1 class="title">Categories</h1>
-            <div class="categories-grid"></div>
-        </section>
+        <!--<img class="the-header-img"src="IMG_5186.jpg" alt="">-->
+
+   
+
 
     
-        <section class="trending" id="trending">
-            <h1 class="title">trending recipes</h1>
-            <div class="trending-grid"></div>
 
-            <div class="pages-div">
-                <a href="#trending" class="number" data-id="1">1</a>
-                <a href="#trending" class="number"data-id="2">2</a>
-                <a href="#trending" class="number" data-id="3">3</a>
+    <section class="projects-section" data-id="projects">
+        <div class="skewed reverse"></div>
+        <div class="project-item project-item-1">
+            <img src="Group 84.png" alt="" class="memoji-1">
+            <img src="JRF.jpeg" alt="" class="project-img">
+            <div class="project-item-content">
+                <h1>Premier League API</h1>
+                <span>#Website, #Online, #Sports</span>
+                <h2>Premier League Live Standings, Game Stats, Player Bios</h2>
+                <a href="https://www.premierleagueconcept.com">Visit Project</a>
             </div>
-        </section>
+        </div>
 
-        <section class="all-recipes-section" id="all-recipes-section">
-            <h1 class="title">All Recipes</h1>
-            <div class="all-recipes-grid"></div>
-            <div class="numbers-div"></div>
-        </section>
+        <div class="project-item">
+            <img src="tastyrecipes2.png" alt="" class="project-img">
+            <div class="project-item-content">
+                <h1>TastyRecipes</h1>
+                <span>#Website, #Recipes, #Cooking</span>
+                <h2>Enabling users to access food recipes</h2>
+                <a href="https://tiny-khapse-4946f9.netlify.app">Visit Project</a>
+            </div>
+        </div>
+    </section>
 
+    <section class="skills-section" data-id="skills">
+        <div class="skewed"></div>
+        <img class="skills-memoji" src="skills-memoji.png" alt="">
+        <h1 class="title">My Languages</h1>
+        <div class="languages-grid">
+            <div class="language-element">
+                <img src="html.png" alt="">
+                <p class="language-name">HTML</p>
+            </div>
 
-    </main>
+            <div class="language-element">
+                <img src="css.png" alt="">
+                <p class="language-name">CSS</p>
+            </div>
 
-    <footer class="footer">
-        <img src="footer.png" alt="">
-    </footer>
+            <div class="language-element">
+                <img src="js.png" alt="">
+                <p class="language-name">Javascript</p>
+            </div>
 
-  
+            <div class="language-element">
+                <img src="react.png" alt="">
+                <p class="language-name">React</p>
+            </div>
+        </div>
+    </section>
 
+    
+    <section class="footer" data-id="contact">
 
-   
-    <script type="module" src="app.js"></script>
-   
+        <h3 class="title">Connect With Me!</h3>
 
+        <div class="connect-grid">
+            <div class="connect-item">
+                <i class="fa-solid fa-envelope"></i>
+                <h3 class="connect-name">EMAIL</h3>
+                <div class="color-line"></div>
+                <p class="connect-info">jasonf8080@gmail.com</p>
+            </div>
+
+            <div class="connect-item">
+                <i class="fa-solid fa-user"></i>
+                <h3 class="connect-name">SOCIALS</h3>
+                <div class="color-line"></div>
+                <div class="socials">
+                    <img src="Group 94.png" alt="">
+                    <img src="Group 95.png" alt="">
+                    <img src="Group 96.png" alt="">
+                </div>
+            </div>
+
+            <div class="connect-item">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3 class="connect-name">PHONE</h3>
+                <div class="color-line"></div>
+                <p class="connect-info">845-204-4236</p>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
 </body>
 </html>
